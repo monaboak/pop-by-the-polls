@@ -38,6 +38,21 @@ main > article > section {
 
 /* Card Styles */
 
+.card {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.card section {
+  padding: 20px;
+}
+
+.card p {
+  font-size: 17px;
+}
+
 /* Header Styles */
 
 /* Button Styles */
