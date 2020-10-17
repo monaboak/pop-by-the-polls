@@ -22,6 +22,7 @@ p {
 
 img {
   width: 100%;
+  display: block;
 }
 
 figure {
@@ -35,6 +36,20 @@ main > article > section {
 }
 
 /* Grid Styles */
+
+/*This is only applied on desktop */
+@media (min-width: 768px) {
+  /*This is a grid with two columns*/
+  .grid-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*Image should fill container of card that also 
+  has two colums*/
+
+  
+}
 
 /* Card Styles */
 
@@ -52,6 +67,19 @@ main > article > section {
 .card p {
   font-size: 17px;
 }
+
+
+/*This is only applied on desktop */
+@media (min-width: 768px) 
+  
+    /*Image should fill container of card that also 
+    has two colums*/
+  
+    .card.grid-1-2 img {
+        object-fit: cover;
+        height: 100%;
+    }
+  }
 
 /* Header Styles */
 
