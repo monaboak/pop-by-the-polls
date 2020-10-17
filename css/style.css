@@ -146,6 +146,43 @@ main > article > header img {
 
 /* Navbar Styles */
 
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  height: 30px;
+  width: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Navigation Mobile Styles */
+
+/*Navigation Desktop Styles*/
+@media (min-width: 768px) {
+  nav {
+    padding: 0 40px;
+  }
+  nav ul {
+    display: flex;
+    max-width: 500 px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 /* Footer Styles*/
 
 footer {
